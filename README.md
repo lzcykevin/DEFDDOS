@@ -44,4 +44,4 @@ KILL=1
 EMAIL_TO="root"
 
 ##### Number of seconds the banned
-``` bash
+```
