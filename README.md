@@ -1,43 +1,47 @@
 # DEFDDOS
 
 ## INSTALL
-> wget https://raw.githubusercontent.com/lzcykevin/DEFDDOS/master/install.sh
-> chmod +x install.sh
-> ./install.sh
-
+``` bash
+wget https://raw.githubusercontent.com/lzcykevin/DEFDDOS/master/install.sh
+chmod +x install.sh
+./install.sh
+``` 
 ## UNINSTALL
-> wget https://raw.githubusercontent.com/lzcykevin/DEFDDOS/master/uninstall.sh
-> chmod +x uninstall.sh
-> ./uninstall.sh
-
+``` bash
+wget https://raw.githubusercontent.com/lzcykevin/DEFDDOS/master/uninstall.sh
+chmod +x uninstall.sh
+./uninstall.sh
+``` 
 ## CONFIG
-> /usr/local/ddos/ddos.conf
-> ##### Paths of the script and other files
-> PROGDIR="/usr/local/ddos"
-> PROG="/usr/local/ddos/ddos.sh"
-> IGNORE_IP_LIST="/usr/local/ddos/ignore.ip.list"
-> CRON="/etc/cron.d/ddos.cron"
-> APF="/etc/apf/apf"
-> IPT="/sbin/iptables"
+``` bash
+/usr/local/ddos/ddos.conf
+##### Paths of the script and other files
+PROGDIR="/usr/local/ddos"
+PROG="/usr/local/ddos/ddos.sh"
+IGNORE_IP_LIST="/usr/local/ddos/ignore.ip.list"
+CRON="/etc/cron.d/ddos.cron"
+APF="/etc/apf/apf"
+IPT="/sbin/iptables"
 
-> ##### frequency in minutes for running the script
-> ##### Caution: Every time this setting is changed, run the script with --cron ¶àÉÙ·ÖÖÓÖ´ĞĞÒ»´ÎÍ³¼Æ
-> #####          option so that the new frequency takes effect
-> FREQ=1
-> 
-> ##### How many connections define a bad IP? Indicate that below. µ±Ò»¸öIPµÄ×î´óÁ¬½ÓÊÇ¶àÉÙµÄÊ±ºò×èÖ¹Ëü
-> NO_OF_CONNECTIONS=150
-> 
-> ##### APF_BAN=1 (Make sure your APF version is atleast 0.96£¬È·¶¨°²×°APF²¢ÇÒ°æ±¾´óÓê0.96)
-> ##### APF_BAN=0 (Uses iptables for banning ips instead of APF£¬ÓÃiptables´úÀíAPF)
-> APF_BAN=1
-> 
-> ##### KILL=0 (Bad IPs are'nt banned, good for interactive execution of script)
-> ##### KILL=1 (Recommended setting£¬ÍÆ¼öÉèÖÃ)
-> KILL=1
-> 
-> ##### An email is sent to the following address when an IP is banned.×èÖ¹Ò»¸öIPºóÍ¨ÖªË­
-> ##### Blank would suppress sending of mails
-> EMAIL_TO="root"
-> 
-> ##### Number of seconds the banned
+##### frequency in minutes for running the script
+##### Caution: Every time this setting is changed, run the script with --cron å¤šå°‘åˆ†é’Ÿæ‰§è¡Œä¸€æ¬¡ç»Ÿè®¡
+#####          option so that the new frequency takes effect
+FREQ=1
+
+##### How many connections define a bad IP? Indicate that below. å½“ä¸€ä¸ªIPçš„æœ€å¤§è¿æ¥æ˜¯å¤šå°‘çš„æ—¶å€™é˜»æ­¢å®ƒ
+NO_OF_CONNECTIONS=150
+
+##### APF_BAN=1 (Make sure your APF version is atleast 0.96ï¼Œç¡®å®šå®‰è£…APFå¹¶ä¸”ç‰ˆæœ¬å¤§é›¨0.96)
+##### APF_BAN=0 (Uses iptables for banning ips instead of APFï¼Œç”¨iptablesä»£ç†APF)
+APF_BAN=1
+
+##### KILL=0 (Bad IPs are'nt banned, good for interactive execution of script)
+##### KILL=1 (Recommended settingï¼Œæ¨èè®¾ç½®)
+KILL=1
+
+##### An email is sent to the following address when an IP is banned.é˜»æ­¢ä¸€ä¸ªIPåé€šçŸ¥è°
+##### Blank would suppress sending of mails
+EMAIL_TO="root"
+
+##### Number of seconds the banned
+``` bash
